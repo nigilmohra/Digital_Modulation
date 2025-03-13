@@ -1,3 +1,8 @@
+// Synchronous FIFO
+// Nigil
+
+// Timescale
+
 `timescale 1ns / 1ps
 
 module SynFIFO #(parameter DEPTH = 8, WIDTH = 16)

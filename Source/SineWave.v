@@ -1,6 +1,5 @@
-// SineWave for Amplitude Shift Keying
+// Sine Wave for Amplitude Shift Keying
 // Nigil
-
 
 // Timescale
 

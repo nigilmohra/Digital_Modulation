@@ -29,7 +29,7 @@ decTohex = [hex(value)[2:].zfill(4).upper() for value in scaledSW]
 # Padding
 num_digits = len(str(numPoints - 1))
 
-
+# Print Data Points
 print("Sine Wave Look-Up Table")
 for i, hexValue in enumerate(decTohex):
     formatted_num = str(i).zfill(num_digits)

@@ -7,20 +7,14 @@
 
 module synFIFO (
     input CLK, 
-    input RST,
-    
+    input RST, 
     input wEN,      
-    input rEN,  
-    
-    input dIn, 	    
-    
-    output bFull,   		// Buffer Full
-    output bEmpty,  		// Buffer Empty    
-    
+    input rEN,   
+    input dIn, 	      
+    output bFull,   		    // Buffer Full
+    output bEmpty,  		    // Buffer Empty    
     output reg [7:0] count_i, 	// Syncronized Counter
-    
-    output reg dOut, 		// Input - Bit
-    
+    output reg dOut, 		    // Input - Bit
     output [15:0] data_pt
 );
 

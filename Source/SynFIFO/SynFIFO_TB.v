@@ -2,6 +2,7 @@
 // Nigil
 
 // Timescale
+
 `timescale 1ns / 1ps
 
 module SynFIFO_TB();

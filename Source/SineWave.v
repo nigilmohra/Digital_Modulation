@@ -283,7 +283,7 @@ begin
         data_pt <= 16'h0;
     end 
     else                            // Reset is High
-    begin	                        // Count I - Comes from the FIFO Module
+    begin	                       
         if(Bit == 1'b1)             // Bit-1
         begin 
             case (count_i)
@@ -812,6 +812,5 @@ begin
         dFLAG <= 1'b1;
     else
         dFLAG <= 1'b0;
-end 
-    
+end
 endmodule

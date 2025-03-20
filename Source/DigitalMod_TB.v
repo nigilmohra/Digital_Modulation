@@ -1,8 +1,7 @@
-// Synchronous FIFO - TestBench
+// Digital Modulation Schemes - TestBench
 // Nigil
 
 // Timescale
-
 `timescale 1ns / 1ps
 
 module DigitalMod_TB
@@ -22,19 +21,15 @@ wire bEmpty;
 wire bFull;
 wire [15:0] data_pt;
 
-    
 integer count_i;
 
 // Instantiate 
-
 synFIFO Dut (CLK, RST, wEN, rEN, dIn, bFull, bEmpty, dOut, dFLAG, data_pt);
 
 // Clock
-
 always begin #5 CLK = ~CLK; end
 
 // Write
-
 task writeData(input test_dIn);
 begin
     @(posedge CLK);
@@ -46,8 +41,7 @@ begin
 end
 endtask
 
-// Read 
-
+// Read
 task readData();
 begin
     @(posedge CLK);
@@ -59,7 +53,6 @@ end
 endtask
 
 // Stimulus
-
 initial begin
     #1 RST = 1'b0;
        rEN = 1'b0;
@@ -67,14 +60,12 @@ initial begin
         
     // Test 1 - PASS
     // Write
-    
     @(posedge CLK);
        RST = 1'b1;  
        
     $display("Test 1");
     
     // Write
-    
     writeData(0);
     writeData(1);
     writeData(0);
@@ -85,7 +76,7 @@ initial begin
     writeData(1);
 
     // Read
-    wait(dFLAG)
+    wait(dFLAG) 
         readData();  
     wait(dFLAG)        
         readData(); 

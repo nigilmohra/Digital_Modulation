@@ -77,5 +77,4 @@ end
 assign bEmpty = (rPtr == wPtr);
 assign bFull  = ((wPtr + 1'b1) == rPtr);
 
-
 endmodule

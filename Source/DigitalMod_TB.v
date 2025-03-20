@@ -2,6 +2,7 @@
 // Nigil
 
 // Timescale
+
 `timescale 1ns / 1ps
 
 module DigitalMod_TB
@@ -24,12 +25,15 @@ wire [15:0] data_pt;
 integer count_i;
 
 // Instantiate 
+    
 synFIFO Dut (CLK, RST, wEN, rEN, dIn, bFull, bEmpty, dOut, dFLAG, data_pt);
 
 // Clock
+    
 always begin #5 CLK = ~CLK; end
 
 // Write
+    
 task writeData(input test_dIn);
 begin
     @(posedge CLK);
@@ -42,6 +46,7 @@ end
 endtask
 
 // Read
+    
 task readData();
 begin
     @(posedge CLK);
@@ -60,12 +65,14 @@ initial begin
         
     // Test 1 - PASS
     // Write
+    
     @(posedge CLK);
        RST = 1'b1;  
        
     $display("Test 1");
     
     // Write
+    
     writeData(0);
     writeData(1);
     writeData(0);
@@ -76,6 +83,7 @@ initial begin
     writeData(1);
 
     // Read
+    
     wait(dFLAG) 
         readData();  
     wait(dFLAG)        

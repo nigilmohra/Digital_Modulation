@@ -13,7 +13,6 @@ module SineWave
     output reg [15:0] data_pt
 );
 
-
 // Registers - Look-Up Table
 // Amplitude Max Value 16'hFFFF
 
@@ -808,6 +807,7 @@ begin
         end
         count_i <= count_i + 8'h1;  
     end
+    // Done Flag - When Low Don't Read from FIFO
     if(count_i == 255)
         dFLAG <= 1'b1;
     else

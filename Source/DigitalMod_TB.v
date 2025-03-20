@@ -5,10 +5,7 @@
 
 `timescale 1ns / 1ps
 
-module DigitalMod_TB
-(
-    
-);
+module DigitalMod_TB();
 
 reg CLK = 1'b0;
 reg RST;

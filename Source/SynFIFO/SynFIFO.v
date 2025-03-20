@@ -27,7 +27,7 @@ reg reg_f_05;
 reg reg_f_06;
 reg reg_f_07;
 
-reg [2:0] wPtr;
+reg [3:0] wPtr;
 reg [2:0] rPtr;
 
 // Write
@@ -48,6 +48,8 @@ always @(posedge CLK or negedge RST) begin
             7 : reg_f_07 <= dIn;   
         endcase
         wPtr <= wPtr + 1;
+        if(wPtr == 8)
+            wPtr = 0;
     end
 end
 
@@ -75,6 +77,6 @@ end
 // Full and Empty
 
 assign bEmpty = (rPtr == wPtr);
-assign bFull  = ((wPtr + 1'b1) == rPtr);
+assign bFull  = ({~wPtr[3], wPtr[2:0]} == {1'b0, rPtr});
 
 endmodule

@@ -1,7 +1,7 @@
 // SineWave for Amplitude Shift Keying (ASK)
 // Nigil
 
- `define ASK
+// `define ASK
 // `define FSK
 // `define PSK
 

@@ -66,7 +66,6 @@ initial begin
     #10  RESET = 1'b1;
     @(posedge CLK);
          
-       
     $display("Test 1");
     
     // Write

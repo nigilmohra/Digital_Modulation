@@ -1,7 +1,6 @@
 // Digital Modulation Schemes - TestBench
 // Nigil
 
-
 // Timescale
 
 `timescale 1ns / 1ps
@@ -51,7 +50,7 @@ begin
         rEN = 1'b1;
     @(posedge CLK); 
         wait(send_in)   
-        rEN = 1'b0;
+            rEN = 1'b0;
 end
 endtask
 
@@ -63,7 +62,8 @@ initial begin
         
     // Test 1 - PASS
     // Write
-    #10 RESET = 1'b1;
+    
+    #10  RESET = 1'b1;
     @(posedge CLK);
          
        
@@ -81,14 +81,16 @@ initial begin
     writeData(1);
 
     // Read
-        readData();       
-        readData();
-        readData();         
-        readData();      
-        readData();     
-        readData();   
-        readData();    
-        readData(); 
+    
+    readData();       
+    readData();
+    readData();         
+    readData();      
+    readData();     
+    readData();   
+    readData();    
+    readData(); 
+    
     $stop;
 end     
                               

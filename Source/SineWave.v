@@ -2,7 +2,7 @@
 // Nigil
 
 // `define ASK
- `define FSK
+// `define FSK
 // `define PSK
 
 // Timescale

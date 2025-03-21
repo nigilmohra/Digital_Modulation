@@ -1335,7 +1335,7 @@ begin
                 255 : data_pt <= 16'hB0FB;
 `endif             
             endcase         
-        end
+        end // Check !
         if(count_i != 255 && RESET) begin
             done    <= 0;
             count_i <= count_i + 8'h1;  

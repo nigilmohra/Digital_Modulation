@@ -15,9 +15,9 @@ There are multiple methods to generate a sine wave in Verilog, such as mathemati
 | _Figure 1. Architecture of SineWave Generator (SLMod1)_|
 
 The LUT values for different modulation schemes are generated using a Python script, which can be found in the PyCode folder. Each value in the LUT is a 16-bit representation of a sine wave sample.
-1. For Amplitude Shift Keying (ASK), the amplitude of the sine wave is scaled to represent different binary values. This scaling adjusts the amplitude for the two possible states (e.g., high and low) corresponding to the binary symbols 1 and 0.
+1. For Amplitude Shift Keying (ASK), the amplitude of the sine wave is scaled to represent different binary values. This scaling adjusts the amplitude for the two possible states.
 2. In Phase Shift Keying (PSK), the sine wave undergoes a phase shift of 180 degrees to distinguish between the binary states. This is achieved by reversing the sine wave samples, effectively inverting the phase of the signal.
-3. For Frequency Shift Keying (FSK), the frequency of the sine wave is altered to represent the binary states. This change in frequency is accomplished by using different step sizes in the LUTs for each symbol, allowing the signal to shift between frequencies corresponding to the 0 and 1 states.
+3. For Frequency Shift Keying (FSK), the frequency of the sine wave is altered to represent the binary states. 
 
 ## 1.2. Digital Modulation Module (Modified Synchronous FIFO)
 

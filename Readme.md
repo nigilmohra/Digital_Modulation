@@ -2,7 +2,7 @@
 
 This repository contains documents, code, and other materials related to the hardware implementation of digital modulation schemes on an FPGA. The project was completed as part of the ECE383: FPGA-based Systems Design course.
 
-Please note that detailed documentation is not included; only high-level architectural information is provided. You are welcome to use the code as needed.
+Please note that detailed documentation is not included; only high-level architectural information is provided. 
 
 # 1. Hardware Architecture
 
@@ -27,9 +27,9 @@ The LUT values for different modulation schemes are generated using a Python scr
 
 A modified synchronous FIFO is used to store and buffer the incoming data bits. Each bit requires 256 clock cycles to complete its modulation process. The read and write operations of the FIFO are controlled by the "done" signal from the SineWave generator sub-module, which indicates when modulation is complete for a given bit. The buffer itself has a depth of 8 entries and a width of 1 bit per entry, allowing it to efficiently handle the incoming data stream while ensuring proper synchronization during modulation.
 
-The clock and reset signals are not shown explicitly in the design.
+# Note and References
 
-# Reference
+The clock and reset signals are not explicitly shown in the design diagrams, and the output waveforms are not included. However, the design has been thoroughly verified, and you are welcome to use the provided code as needed.
 
 1. [Digital Modulation Schemes - Geeks for Geeks](https://www.geeksforgeeks.org/digital-modulation-techniques/)
 2. [Chip Verify](https://www.chipverify.com/)

@@ -19,7 +19,7 @@ The LUT values for different modulation schemes are generated using a Python scr
 2. In Phase Shift Keying (PSK), the sine wave undergoes a phase shift of 180 degrees to distinguish between the binary states. This is achieved by reversing the sine wave samples, effectively inverting the phase of the signal.
 3. For Frequency Shift Keying (FSK), the frequency of the sine wave is altered to represent the binary states. This change in frequency is accomplished by using different step sizes in the LUTs for each symbol, allowing the signal to shift between frequencies corresponding to the 0 and 1 states.
 
-1.2. Digital Modulation Module (Modified Synchronous FIFO)
+# 1.2. Digital Modulation Module (Modified Synchronous FIFO)
 
 | ![TopModule](https://github.com/user-attachments/assets/ae126c48-f352-4826-8e09-04e0409dee8e) |
 |:----:|

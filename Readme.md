@@ -7,7 +7,7 @@ Please note that detailed documentation is not included; only high-level archite
 # Architecture
 
 |  ![SineWave](https://github.com/user-attachments/assets/b3003268-4630-42b6-a39b-a11163bc6d6d) |
-| ---- |
+|:----:|
 | _Figure 1. Architecture of SineWave Generator (SLMod1)_|
 
 There are multiple methods to generate a sine wave in Verilog, such as mathematical calculations, CORDIC algorithms, and lookup tables (LUTs). For this project, a LUT-based method is used due to its efficiency and simplicity, especially when implementing hardware systems like FPGA.

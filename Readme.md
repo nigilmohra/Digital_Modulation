@@ -2,9 +2,9 @@
 
 This repository contains documents, code, and other materials related to the hardware implementation of digital modulation schemes on an FPGA. The project was completed as part of the ECE383: FPGA-based Systems Design course.
 
-Please note that detailed documentation is not included; only high-level architectural information is provided. 
-
 # 1. Hardware Architecture
+
+Please note that detailed documentation is not included; only high-level architectural information is provided. 
 
 ## 1.1. SineWave Generator
 

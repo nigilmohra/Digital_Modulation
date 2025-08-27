@@ -10,7 +10,7 @@ Please note that detailed documentation is not included; only high-level archite
 
 There are multiple methods to generate a sine wave in Verilog, such as mathematical calculations, CORDIC algorithms, and lookup tables (LUTs). For this project, a LUT-based method is used due to its efficiency and simplicity.
 
-|  <img width="1728" height="1434" alt="SWG_Lvl1" src="https://github.com/user-attachments/assets/0fec3190-d08a-423f-9899-d2aa17a9c175" /> |
+|  <img width="2038" height="1507" alt="SWG_Lvl1" src="https://github.com/user-attachments/assets/37d66163-11ba-4dec-9a8e-15607af15c17" /> |
 |:----:|
 | _Figure 1. Architecture of SineWave Generator (SLMod1)_|
 

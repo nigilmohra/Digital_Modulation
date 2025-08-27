@@ -10,10 +10,6 @@ Please note that detailed documentation is not included; only high-level archite
 
 There are multiple methods to generate a sine wave in Verilog, such as mathematical calculations, CORDIC algorithms, and lookup tables (LUTs). For this project, a LUT-based method is used due to its efficiency and simplicity.
 
-|  <img width="2038" height="1507" alt="SWG_Lvl1" src="https://github.com/user-attachments/assets/37d66163-11ba-4dec-9a8e-15607af15c17" /> |
-|:----:|
-| _Figure 1. Architecture of SineWave Generator (SLMod1)_|
-
 The LUT values for different modulation schemes are generated using a Python script, which can be found in the PyCode folder. Each value in the LUT is a 16-bit representation of a sine wave sample.
 1. For Amplitude Shift Keying (ASK), the amplitude of the sine wave is scaled to represent different binary values. This scaling adjusts the amplitude for the two possible states.
 2. In Phase Shift Keying (PSK), the sine wave undergoes a phase shift of 180 degrees to distinguish between the binary states. This is achieved by reversing the sine wave samples, effectively inverting the phase of the signal.
@@ -23,9 +19,9 @@ The LUT values for different modulation schemes are generated using a Python scr
 
 A modified synchronous FIFO is used to store and buffer the incoming data bits. Each bit requires 256 clock cycles to complete its modulation process. The read and write operations of the FIFO are controlled by the "done" signal from the SineWave generator sub-module, which indicates when modulation is complete for a given bit. The buffer itself has a depth of 8 entries and a width of 1 bit per entry, allowing it to efficiently handle the incoming data stream while ensuring proper synchronization during modulation.
 
-| ![TopModule](https://github.com/user-attachments/assets/ae126c48-f352-4826-8e09-04e0409dee8e) |
+|  ![DigitalMod](https://github.com/user-attachments/assets/1fe78f45-4a5d-468e-b5c3-4409ac876781) |
 |:----:|
-| _Figure 2. Architecture of Digital Modulation Module (TP)_|
+| _Figure 1. Architecture of Digital Modulation Module_|
 
 # Notes
 

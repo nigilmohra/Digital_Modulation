@@ -19,7 +19,7 @@ The LUT values for different modulation schemes are generated using a Python scr
 
 A modified synchronous FIFO is used to store and buffer the incoming data bits. Each bit requires 256 clock cycles to complete its modulation process. The read and write operations of the FIFO are controlled by the "done" signal from the SineWave generator sub-module, which indicates when modulation is complete for a given bit. The buffer itself has a depth of 8 entries and a width of 1 bit per entry, allowing it to efficiently handle the incoming data stream while ensuring proper synchronization during modulation.
 
-|  <img width="4094" height="1396" alt="SWG_Lvl1" src="https://github.com/user-attachments/assets/bffe6554-53d2-454e-a7cf-dd00830d3ae4" /> |
+|  ![DigitalMod](https://github.com/user-attachments/assets/e44a043f-bc23-45c7-92f2-fbdcb733a74b) |
 |:----:|
 | _Figure 1. Architecture of Digital Modulation Module_|
 

@@ -22,7 +22,7 @@ $$F_{SINE} = \frac{F_{CLK}}{N_{DATAPOINTS}}$$
 
 A modified synchronous FIFO is used to store and buffer the incoming data bits. Each bit requires 256 clock cycles to complete its modulation process. The read and write operations of the FIFO are controlled by the "done" signal from the SineWave generator sub-module, which indicates when modulation is complete for a given bit. The buffer itself has a depth of 8 entries and a width of 1 bit per entry, allowing it to efficiently handle the incoming data stream while ensuring proper synchronization during modulation.
 
-|  ![DigitalMod](https://github.com/user-attachments/assets/e44a043f-bc23-45c7-92f2-fbdcb733a74b) |
+|  <img width="1594" height="722" alt="Diagram" src="https://github.com/user-attachments/assets/57a58ae7-ce8f-4e7c-b3a9-e344f54e4838" /> |
 |:----:|
 | _Figure 1. Architecture of Digital Modulation Module_|
 

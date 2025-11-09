@@ -15,6 +15,11 @@ The LUT values for different modulation schemes are generated using a Python scr
 2. In Phase Shift Keying (PSK), the sine wave undergoes a phase shift of 180 degrees to distinguish between the binary states. This is achieved by reversing the sine wave samples, effectively inverting the phase of the signal.
 3. For Frequency Shift Keying (FSK), the frequency of the sine wave is altered to represent the binary states. 
 
+The frequency of the sinewave used is given by the following formula:
+$$
+F_{SINEWAVE} = \frac{F_{CLK}}{#DATAPOINTS}
+$$
+
 ## 1.2. Digital Modulation Module (Modified Synchronous FIFO)
 
 A modified synchronous FIFO is used to store and buffer the incoming data bits. Each bit requires 256 clock cycles to complete its modulation process. The read and write operations of the FIFO are controlled by the "done" signal from the SineWave generator sub-module, which indicates when modulation is complete for a given bit. The buffer itself has a depth of 8 entries and a width of 1 bit per entry, allowing it to efficiently handle the incoming data stream while ensuring proper synchronization during modulation.

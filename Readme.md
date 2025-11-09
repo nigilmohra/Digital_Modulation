@@ -16,7 +16,7 @@ The LUT values for different modulation schemes are generated using a Python scr
 3. For Frequency Shift Keying (FSK), the frequency of the sine wave is altered to represent the binary states. 
 
 The frequency of the sinewave used is given by the following formula:
-$$F_{SINEWAVE} = \frac{F_{CLK}}{N_{DATAPOINTS}}$$
+$$F_{SINE} = \frac{F_{CLK}}{N_{DATAPOINTS}}$$
 
 ## 1.2. Digital Modulation Module (Modified Synchronous FIFO)
 

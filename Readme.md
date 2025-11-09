@@ -26,7 +26,7 @@ A modified synchronous FIFO is used to store and buffer the incoming data bits. 
 |:----:|
 | _Figure 1. Architecture of Digital Modulation Module_|
 
-| <img width="497" height="201" alt="image" src="https://github.com/user-attachments/assets/326d134b-210b-4800-8ecd-47d925569eaa" /> |
+| <img width="1242" height="314" alt="image" src="https://github.com/user-attachments/assets/063ae814-2dc9-41c9-8af5-6012093b183b" /> |
 |:----:|
 | _Figure 2. Post-Implementation Utilization Report_|
 

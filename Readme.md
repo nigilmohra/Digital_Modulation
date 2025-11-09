@@ -23,6 +23,10 @@ A modified synchronous FIFO is used to store and buffer the incoming data bits. 
 |:----:|
 | _Figure 1. Architecture of Digital Modulation Module_|
 
+| <img width="497" height="201" alt="image" src="https://github.com/user-attachments/assets/326d134b-210b-4800-8ecd-47d925569eaa" /> |
+|:----:|
+| _Figure 2. Post-Implementation Utilization Report_|
+
 # Notes
 
 The clock and reset signals are not explicitly shown in the design diagrams, and the output waveforms are not included. However, the design has been thoroughly verified, and you are welcome to use the provided code as needed. For more details refer [Digital Modulation Schemes - Geeks for Geeks](https://www.geeksforgeeks.org/digital-modulation-techniques/) and [Chip Verify](https://www.chipverify.com/).
